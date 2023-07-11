@@ -21,7 +21,6 @@ from pydantic import BaseModel
 
 app =FastAPI()
 load_dotenv()
-# openai_api_key = os.getenv("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")
 
 def extract_pdf(pdf):
         
@@ -60,7 +59,6 @@ def generating_mcq(chunks):
 
         prompt = ChatPromptTemplate(
         messages=[
-            AIMessagePromptTemplate.from_template("""Generating Subject like Mathematics & English, multiple choice question. """),
             SystemMessagePromptTemplate.from_template("""The multiple choice question should be in three level, In first level easy,In second level medium, In third level hard."""),
             HumanMessagePromptTemplate.from_template("""Generate 10 multiple choice questions from it along with the correct answer. \n 
             {format_instructions} \n
@@ -101,7 +99,7 @@ async def generate_mcq_api(request:Doc):
 
         filename ="Lec_18_Transpose of a Matrix.pdf"
         chunks =extract_pdf(filename)
-        # return chunks
+
         mcq =generating_mcq(chunks)
         return mcq
 
