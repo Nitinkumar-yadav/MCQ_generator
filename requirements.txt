@@ -1,13 +1,9 @@
 fastapi==0.99.1
 langchain==0.0.23
-langchainplus-sdk==0.0.16
 openai==0.27.8
 openapi-schema-pydantic==1.2.4
-prompt-toolkit==3.0.38
-promptlayer==0.1.90
 pydantic==2.0.2
 PyPDF2==3.0.1
-python-dateutil==2.8.2
 python-dotenv==1.0.0
 uvicorn==0.22.0
 validators==0.20.0
