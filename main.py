@@ -16,7 +16,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from PyPDF2 import PdfReader
 from fastapi import FastAPI
 import uvicorn
-from pydantic_core import BaseModel
+from pydantic_core import BaseModel, root_validator
 
 
 app =FastAPI()
