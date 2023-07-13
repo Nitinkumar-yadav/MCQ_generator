@@ -1,5 +1,5 @@
 fastapi==0.99.1
-langchain==0.0.232
+langchain==0.0.23
 langchainplus-sdk==0.0.16
 openai==0.27.8
 openapi-schema-pydantic==1.2.4
