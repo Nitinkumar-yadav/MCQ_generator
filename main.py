@@ -97,7 +97,7 @@ async def generate_mcq_api(request:Doc):
      
         res= request.pdf_url
 
-        filename ="Lec_18_Transpose of a Matrix.pdf"
+        filename ="iesc108-min.pdf"
         chunks =extract_pdf(filename)
 
         mcq =generating_mcq(chunks)
